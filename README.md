@@ -12,5 +12,4 @@ A template `.env.template` file is provided in the root directory.
 Set up the environment variables in `.env` and run the following command:
 
 ````bash
-docker compose up -d```
-````
+docker compose up -d
