@@ -3,7 +3,8 @@ name: Update Cargo.toml Version
 on:
   push:
     tags:
-      - "v*.*.*"
+      - "v*"
+  workflow_dispatch:
 
 jobs:
   update-version:
