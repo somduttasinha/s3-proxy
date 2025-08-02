@@ -27,7 +27,7 @@ jobs:
 
       - name: Bump version in Cargo.toml
         working-directory: ./s3-proxy-rs
-        run: cargo edit --version ${{ steps.extract.outputs.version }}
+        run: cargo set-version ${{ steps.extract.outputs.version }}
 
       - name: Commit and push changes
         run: |
