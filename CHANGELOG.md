@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/somduttasinha/s3-proxy/compare/v1.0.1...v1.0.2) (2025-08-02)
+
+
+### Bug Fixes
+
+* more informative error messages ([5dfa08c](https://github.com/somduttasinha/s3-proxy/commit/5dfa08ca5316ebfe40d95f6e3475e8939ce8f9d9))
+
 ## [1.0.1](https://github.com/somduttasinha/s3-proxy/compare/v1.0.0...v1.0.1) (2025-08-02)
 
 
