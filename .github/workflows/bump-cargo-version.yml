@@ -1,0 +1,37 @@
+name: Update Cargo.toml Version
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  update-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract version from tag
+        id: extract
+        run: |
+          VERSION="${GITHUB_REF#refs/tags/v}"
+          echo "Parsed version: $VERSION"
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Install cargo-edit
+        run: cargo install cargo-edit
+
+      - name: Bump version in Cargo.toml
+        working-directory: ./s3-proxy-rs
+        run: cargo edit --version ${{ steps.extract.outputs.version }}
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add Cargo.toml
+          git commit -m "chore: bump Cargo.toml version to ${{ steps.extract.outputs.version }}"
+          git push
