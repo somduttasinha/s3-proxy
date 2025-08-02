@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   s3-proxy:
@@ -9,6 +9,6 @@ services:
       - "3001:3001"
     env_file:
       - ./s3-proxy-rs/.env
+      - .env
     restart: unless-stopped
     container_name: s3-proxy
-
