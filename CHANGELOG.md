@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/somduttasinha/s3-proxy/compare/v1.0.6...v1.0.7) (2025-08-03)
+
+
+### Bug Fixes
+
+* fix infra ([48eabed](https://github.com/somduttasinha/s3-proxy/commit/48eabed5b0a8ccb9d8213a4710b0aa604ab421c9))
+
 ## [1.0.6](https://github.com/somduttasinha/s3-proxy/compare/v1.0.5...v1.0.6) (2025-08-03)
 
 
