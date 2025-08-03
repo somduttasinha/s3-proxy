@@ -5,6 +5,13 @@
 
 * small ([1715cf6](https://github.com/somduttasinha/s3-proxy/commit/1715cf63b471c4cb8b253b507bb5903c6fbf38bd))
 
+## [1.0.11](https://github.com/somduttasinha/s3-proxy/compare/v1.0.10...v1.0.11) (2025-08-03)
+
+
+### Bug Fixes
+
+* change error messages ([4637858](https://github.com/somduttasinha/s3-proxy/commit/46378582e1989a21ee667ff9a5723d981c7b17aa))
+
 ## [1.0.10](https://github.com/somduttasinha/s3-proxy/compare/v1.0.9...v1.0.10) (2025-08-03)
 
 
