@@ -118,6 +118,7 @@ async fn generic_handler(
         .await
     {
         Ok(object) => object,
+
         Err(e) => {
             return Response::builder()
                 .status(StatusCode::NOT_FOUND)
