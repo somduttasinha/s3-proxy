@@ -5,6 +5,13 @@
 
 * small ([1715cf6](https://github.com/somduttasinha/s3-proxy/commit/1715cf63b471c4cb8b253b507bb5903c6fbf38bd))
 
+## [1.0.12](https://github.com/somduttasinha/s3-proxy/compare/v1.0.11...v1.0.12) (2025-08-03)
+
+
+### Bug Fixes
+
+* add reminder to cache ([90c7861](https://github.com/somduttasinha/s3-proxy/commit/90c7861361ef42712c8f25b24fbe9a7bb5115a3d))
+
 ## [1.0.11](https://github.com/somduttasinha/s3-proxy/compare/v1.0.10...v1.0.11) (2025-08-03)
 
 
