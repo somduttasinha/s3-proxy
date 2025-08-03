@@ -12,23 +12,23 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        id: vars
+        run: echo "tag=${GITHUB_REF#refs/*/v}" >> $GITHUB_OUTPUT
+      - name: Check output
+        env:
+          RELEASE_VERSION: ${{ steps.vars.outputs.tag }}
+        run: |
+          echo $RELEASE_VERSION
+          echo ${{ steps.vars.outputs.tag }}
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Extract version from tag
-        id: extract
-        run: |
-          RAW_VERSION=${GITHUB_REF#refs/tags/}
-          VERSION="${RAW_VERSION#v}"
-          echo "Parsed version: $VERSION"
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
 
       - name: Install cargo-edit
         run: cargo install cargo-edit
 
       - name: Bump version in Cargo.toml
         working-directory: ./s3-proxy-rs
-        run: cargo set-version ${{ steps.extract.outputs.version }}
+        run: cargo set-version ${{ steps.vars.outputs.tag }}
 
       - name: Commit and push changes
         run: |
