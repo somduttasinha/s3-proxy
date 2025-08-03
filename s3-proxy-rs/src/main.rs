@@ -107,6 +107,8 @@ async fn generic_handler(
         path = path + "/index.html";
     }
 
+    // TODO: introduce cache layer to avoid overloading S3
+    
     let client = &state.client;
     let bucket_name = &state.bucket_name;
 

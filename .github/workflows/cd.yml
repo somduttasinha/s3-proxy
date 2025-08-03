@@ -1,4 +1,4 @@
-name: Update Cargo.toml Version
+name: Update Cargo.toml Version and push to ghcr
 
 on:
   push:
