@@ -144,5 +144,5 @@ async fn generic_handler(
         .status(StatusCode::OK)
         .header(header::CONTENT_TYPE, content_type.to_string())
         .body(body)
-        .expect("Expected to build a response")
+        .expect("Expected to build response")
 }
