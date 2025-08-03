@@ -74,7 +74,7 @@ async fn root(State(state): State<Arc<AppState>>) -> Html<String> {
         .send()
         .await
         .map_err(|e| Error::InternalError(e.to_string()))
-        .expect("Expected to get an object");
+        .expect("Expected to get object");
 
     let buf = object.body.collect().await.unwrap().into_bytes().to_vec();
 
