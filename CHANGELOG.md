@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/somduttasinha/s3-proxy/compare/v1.0.7...v1.0.8) (2025-08-03)
+
+
+### Bug Fixes
+
+* small ([1715cf6](https://github.com/somduttasinha/s3-proxy/commit/1715cf63b471c4cb8b253b507bb5903c6fbf38bd))
+
 ## [1.0.7](https://github.com/somduttasinha/s3-proxy/compare/v1.0.6...v1.0.7) (2025-08-03)
 
 
