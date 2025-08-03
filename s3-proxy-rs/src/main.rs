@@ -122,7 +122,7 @@ async fn generic_handler(
             return Response::builder()
                 .status(StatusCode::NOT_FOUND)
                 .body(Body::from(e.to_string()))
-                .expect("Expected to build a response");
+                .expect("Expected to build response");
         }
     };
 
@@ -132,7 +132,7 @@ async fn generic_handler(
             return Response::builder()
                 .status(StatusCode::NOT_FOUND)
                 .body(Body::from(e.to_string()))
-                .expect("Expected to build a response");
+                .expect("Expected to build response");
         }
     }
     .into_bytes()
