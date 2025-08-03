@@ -5,6 +5,14 @@
 
 * small ([1715cf6](https://github.com/somduttasinha/s3-proxy/commit/1715cf63b471c4cb8b253b507bb5903c6fbf38bd))
 
+## [1.0.9](https://github.com/somduttasinha/s3-proxy/compare/v1.0.8...v1.0.9) (2025-08-03)
+
+
+### Bug Fixes
+
+* change the token ([4409ef0](https://github.com/somduttasinha/s3-proxy/commit/4409ef0d4af476ffd80a2ee9736b80b40011983b))
+* use google release-please ([878cc51](https://github.com/somduttasinha/s3-proxy/commit/878cc51f1e06bbd0c7019b3779db92759edd635e))
+
 ## [1.0.7](https://github.com/somduttasinha/s3-proxy/compare/v1.0.6...v1.0.7) (2025-08-03)
 
 
