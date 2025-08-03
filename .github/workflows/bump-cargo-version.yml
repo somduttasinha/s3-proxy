@@ -18,7 +18,8 @@ jobs:
       - name: Extract version from tag
         id: extract
         run: |
-          VERSION=${{ github.event.release.tag_name }}
+          RAW_VERSION="${{ github.ref_name }}"
+          VERSION="${RAW_VERSION#v}"
           echo "Parsed version: $VERSION"
           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
