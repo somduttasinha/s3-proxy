@@ -1,8 +1,7 @@
 # S3 Proxy
 
 A simple proxy server written in Rust to proxy requests to an S3 bucket. This
-should be used for serving Single Page Applications (SPAs) to users hosted on an
-S3 bucket.
+should be used for serving static, S3-hosted files to users.
 
 ## Usage
 
